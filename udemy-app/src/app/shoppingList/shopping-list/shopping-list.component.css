@@ -1,0 +1,23 @@
+.ingredient{
+    border: solid 1px gray;
+    height: 5vh;
+    width: 50vw;
+}
+
+.ingredient:first-child{
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.ingredient:last-child{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.container{
+    margin-left: 3vw;
+    border-top: solid 1px gray;
+    padding-top: 3rem;
+    margin-top: 3rem;
+}
