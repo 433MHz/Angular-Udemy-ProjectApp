@@ -1,0 +1,15 @@
+<div class="container">
+    <button>New Recipe</button>
+</div>
+
+<div class="foodContainer" *ngFor = 'let item of recipes'>
+    <div class="foodContainer-left">
+        <h3>{{item.name}}</h3>
+        {{item.description}}
+    </div>
+    <div class="foodContainer-right">
+        <img [src]="item.imagePath" alt="">
+    </div>
+</div>
+
+<app-recipe-item></app-recipe-item>
