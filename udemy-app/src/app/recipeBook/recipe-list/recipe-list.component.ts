@@ -13,6 +13,12 @@ export class RecipeListComponent implements OnInit {
     new Recipe('Shnitzel', 'Tasty shnitzel', 'https://source.unsplash.com/daily?food')
   ];
 
+  actualRecipe: Recipe = null;
+
+  setActualRecipe(event){
+    this.actualRecipe = event;
+  }
+
   constructor() { }
 
   ngOnInit(): void {

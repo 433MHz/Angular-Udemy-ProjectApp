@@ -1,15 +1,25 @@
 <div class="container">
+
+<div class="containerLeft">
     <button>New Recipe</button>
+
+    <div class="foodContainer" *ngFor = 'let item of recipes' (click) = "actualRecipe = item">
+        <div class="foodContainer-left">
+            <h3>{{item.name}}</h3>
+            {{item.description}}
+        </div>
+        <div class="foodContainer-right">
+            <img [src]="item.imagePath" alt="">
+        </div>
+    </div>
+    
 </div>
 
-<div class="foodContainer" *ngFor = 'let item of recipes'>
-    <div class="foodContainer-left">
-        <h3>{{item.name}}</h3>
-        {{item.description}}
-    </div>
-    <div class="foodContainer-right">
-        <img [src]="item.imagePath" alt="">
-    </div>
+<div class="containerRight" *ngIf = 'actualRecipe !== null'>
+    <h2>{{actualRecipe.name}}</h2>
+
+    <p>{{actualRecipe.description}}</p>
+    <p>Ingredients</p>
 </div>
 
-<app-recipe-item></app-recipe-item>
+</div>

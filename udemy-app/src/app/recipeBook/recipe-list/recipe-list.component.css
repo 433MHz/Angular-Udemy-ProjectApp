@@ -8,11 +8,30 @@
     padding-left: 2rem;
 
     width: 30vw;
-    height: 20vh;
+    height: 10vh;
     margin-bottom: 1rem;
 }
 
 .foodContainer-right img{
     height: 100%;
 
+}
+
+.containerLeft button{
+    margin: 2rem;
+    font-size: 1.5rem;
+}
+
+.containerRight{
+    margin-left: 2rem;
+}
+
+.container{
+    display: flex;
+    justify-content: left;
+}
+
+.foodContainer:hover{
+    background-color: #DAD8D8;
+    cursor: pointer;
 }
