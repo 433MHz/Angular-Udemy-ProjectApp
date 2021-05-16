@@ -1,0 +1,42 @@
+.container{
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.topContainer{
+    display: flex;
+    justify-content: space-between;
+
+    width: 30%;
+    margin-bottom: 1.5rem;
+}
+
+.topContainer div{
+    display: flex;
+    flex-direction: column;
+}
+
+.topContainer input{
+    height: 3vh;
+}
+
+#nameText{
+    width: 15vw;
+}
+
+#amountText{
+    width: 5vw;
+}
+
+
+.bottomContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.bottomContainer button{
+    width: 30%;
+    font-size: 1.3rem;
+}
